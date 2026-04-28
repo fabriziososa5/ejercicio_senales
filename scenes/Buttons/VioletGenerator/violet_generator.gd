@@ -1,15 +1,11 @@
 extends TextureButton
 
+func generate_block():
+	var block_scene = preload("res://scenes/Buttons/VioletGenerator/VioletGenerator.tscn")
+	var block_instance = block_scene.instantiate()
+	add_child(block_instance)
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-
+	block_instance.position = Vector2(200, 100)
+	
 func _on_button_down() -> void:
-	pass # Replace with function body.
+	get_parent().generate_block()
