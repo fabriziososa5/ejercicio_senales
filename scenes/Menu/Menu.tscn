@@ -17,19 +17,19 @@ position = Vector2(584.464, 323.633)
 scale = Vector2(3.6346, 3.2109)
 texture = ExtResource("1")
 
-[node name="RedGenerator" parent="." unique_id=1396700036 instance=ExtResource("3")]
+[node name="RedGenerator" parent="." unique_id=1396700036 groups=["blocks"] instance=ExtResource("3")]
 offset_left = 154.0
 offset_top = 132.0
 offset_right = 282.0
 offset_bottom = 260.0
 
-[node name="VioletGenerator" parent="." unique_id=613538145 instance=ExtResource("2")]
+[node name="VioletGenerator" parent="." unique_id=613538145 groups=["blocks"] instance=ExtResource("2")]
 offset_left = 867.0
 offset_top = 116.0
 offset_right = 995.0
 offset_bottom = 244.0
 
-[node name="Reset" parent="." unique_id=2048150761 instance=ExtResource("4")]
+[node name="Reset" parent="." unique_id=2048150761 groups=["blocks"] instance=ExtResource("4")]
 offset_left = 503.0
 offset_top = 219.0
 offset_right = 655.0
